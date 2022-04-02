@@ -20,7 +20,8 @@ font-family: 'Roboto', sans-serif;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.267);
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 414px;
+  z-index: 1;
 }
 .header h1 {
   font: 400 44px 'Righteous', cursive;
@@ -32,33 +33,31 @@ font-family: 'Roboto', sans-serif;
   padding-left: 20px;
 }
 .main {
-  padding-top: 92px;
-  padding-left: 10px;
-  padding-bottom: 15px;
+  padding: 92px 0 92px 0;
+  margin-left: 10px;
 }
 .main h2 {
   font: 400 26px 'Righteous', cursive;
   color: #333333;
-  margin-top: 28px;
-  margin-bottom: 14px;
+  margin: 28px 0 4px 10px;
 }
 .main-course {
   display: flex;
   gap: 10px;
   overflow-x: scroll;
-  margin-right: 10px;
+  padding: 10px;
 }
 .drinks {
   display: flex;
   gap: 10px;
   overflow-x: scroll;
-  margin-right: 10px;
+  padding: 10px;
 }
 .dessert {
   display: flex;
   gap: 10px;
   overflow-x: scroll;
-  margin-right: 10px;
+  padding: 10px;
 }
 .footer {
   display: flex;
@@ -68,7 +67,7 @@ font-family: 'Roboto', sans-serif;
   height: 92px;
   position: fixed;
   bottom: 0px;
-  width: 100%;
+  width: 414px;
 }
 .footer button {
   text-align: center;
@@ -81,13 +80,13 @@ font-family: 'Roboto', sans-serif;
   font: 400 20px 'Roboto', sans-serif;
 }
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   max-width: 172px;
-  padding: 20px 10px 0 10px;
+  padding: 10px 10px 10px 10px;
   background-color: #fff;
   border-radius: 10px;
-  margin-top: 16px;
   gap: 10px;
 }
 .card img {
@@ -98,9 +97,9 @@ font-family: 'Roboto', sans-serif;
   font: 700 16px 'Roboto', sans-serif;
   color: #333333;
   width: 15ch;
-  /* text-overflow: ellipsis;
+  text-overflow: ellipsis;
   overflow-x: hidden;
-  white-space: nowrap; */
+  white-space: nowrap;
 }
 
 .card p {
@@ -110,4 +109,17 @@ font-family: 'Roboto', sans-serif;
 .card h4 {
   font: 400 16px 'Roboto', sans-serif;
   color: black;
+}
+.selected {
+  outline: 3px solid #32b72f;
+}
+ion-icon {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #32b72f;
+}
+.mostrar {
+  display: initial;
 }
