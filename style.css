@@ -69,7 +69,7 @@ font-family: 'Roboto', sans-serif;
   bottom: 0px;
   width: 414px;
 }
-.footer button {
+button {
   text-align: center;
   width: 364px;
   height: 61px;
@@ -78,6 +78,11 @@ font-family: 'Roboto', sans-serif;
   color: #cbcbcb;
 
   font: 400 20px 'Roboto', sans-serif;
+}
+.fechar-pedido {
+  background-color: #32b72f;
+  color: white;
+  font-weight: 700;
 }
 .card {
   position: relative;
