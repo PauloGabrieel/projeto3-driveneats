@@ -34,7 +34,7 @@ font-family: 'Roboto', sans-serif;
 }
 .main {
   padding: 92px 0 92px 0;
-  margin-left: 10px;
+  margin-left: 0;
 }
 .main h2 {
   font: 400 26px 'Righteous', cursive;
@@ -127,4 +127,13 @@ ion-icon {
 }
 .mostrar {
   display: initial;
+}
+
+@media (max-width: 414px) {
+  .container {
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
+  }
 }
